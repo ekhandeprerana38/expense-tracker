@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.balance {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.balance h3 {
+    font-size: 30px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.income,
+.expense {
+    width: 48%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.income {
+    background: #e8f5e9;
+}
+
+.expense {
+    background: #ffebee;
+}
+
+.income p {
+    color: green;
+    font-size: 22px;
+}
+
+.expense p {
+    color: red;
+    font-size: 22px;
+}
+
+form {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    padding: 12px;
+    margin-top: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-btn:hover {
+    background: #555;
+}
+
+.delete-btn:hover {
+    background: #cc0000;
+}
+
+.category-badge {
+    background: #eee;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.edit-btn {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn,
+.delete-btn {
+    width: auto;
+    margin-left: 5px;
+} 
+
+#clear-all {
+    background: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    .summary {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .income,
+    .expense {
+        width: 100%;
+    }
+}
+
+button {
+    font-family: Arial, sans-serif;
+}
+
+button:hover {
+    opacity: 0.85;
+}
